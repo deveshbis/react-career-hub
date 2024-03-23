@@ -17,7 +17,7 @@ const FeaturesJobs = () => {
                 <h2 className="text-5xl">Features Jobs: {jobs.length}</h2>
                 <p>Explore thousands of job opportunities with all the information you need. Its your futur</p>
             </div>
-            <div>
+            <div className="grid grid-cols-2 gap-6">
                 {
                     jobs.map(job => <Job key={job.id} job={job}></Job>)
                 }
